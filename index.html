@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo</title>
+    <link rel="stylesheet" href="./styles/pseudo.css">
+    <style>
+        .titl{
+    color: white;
+    text-align: center;
+    position: relative;
+    
+}
+.hh{
+    background-color: #ffffff;
+    padding: 12px;
+    color: black;
+}
+.bor{
+    border: 4px solid #000C2B;
+    height: 500px;
+    position: relative;
+}
+.titl::before{
+    content: '';
+    position: absolute;
+    height: 30px;
+    width: 85%;
+    top: 15px;
+    right: 7%;
+    background-color: transparent;
+    border: 5px solid  #000C2B;
+    z-index: -1;
+    border-bottom: 0px;
+}
+.bor::after{
+    content: '';
+    position: absolute;
+    height: 30px;
+    width: 85%;
+    bottom: 15px;
+    right: 7%;
+    background-color: transparent;
+    border: 5px solid #000C2B;
+    z-index: -1;
+    border-top: 0px;
+}
+.img-1{
+    height: 253px;
+    width: 245px;
+    align-items: center;
+}
+.mindiv{
+    margin-top: 60px;
+    margin-left: 30px;
+    margin-right: 30px;
+    height: 280px;
+}
+.mark{
+    height: 280px;
+    display: inline;
+}
+    </style>
+</head>
+
+<body>
+    <div class="bor">
+        <h1 class="titl">
+            <span class="hh">WEDDING COLLECTION </span> </h1>
+
+        <div class="mindiv">
+            <marquee behavior="right" direction="" hspace="100px">
+
+                <div class="mark">
+                    <img class="img-1" src="https://storage.apex4u.com/63f35a5e-1f28-4dbf-a47d-0aed9d16a464.JPG" alt="">
+                </div>
+                <div class="mark">
+                    <img class="img-1" src="https://storage.apex4u.com/d36eb80d-866d-43ec-83e1-a2c9bd2929a3.jpg" alt="">
+                </div>
+                <div class="mark">
+                    <img class="img-1" src="https://storage.apex4u.com/6f046c2e-ccf1-4b82-a233-f830486a9f22.jpg" alt="">
+                </div>
+                <div class="mark">
+                    <img class="img-1" src="https://storage.apex4u.com/d36eb80d-866d-43ec-83e1-a2c9bd2929a3.jpg" alt="">
+                </div>
+                <div class="mark">
+                    <img class="img-1" src="https://storage.apex4u.com/0f628564-8ae7-4efa-8c88-573aa8500149.jpg" alt="">
+                </div>
+                <div class="mark">
+                    <img class="img-1" src="https://storage.apex4u.com/f371a420-b3ac-4cfe-99a0-e1fe1f7308a7.jpg" alt="">
+                </div>
+                <div class="mark">
+                    <img class="img-1" src="https://storage.apex4u.com/07c0b9ce-f043-4866-8d38-b0de5a8ff689.JPG" alt="">
+                </div>
+                <div class="mark">
+                    <img class="img-1" src="https://storage.apex4u.com/fcbe509e-8094-4e53-a4f3-3b184355cd7b.JPG" alt="">
+                </div>
+                <div class="mark">
+                    <img class="img-1" src="https://storage.apex4u.com/0f628564-8ae7-4efa-8c88-573aa8500149.jpg" alt="">
+                </div>
+                <div class="mark">
+                    <img class="img-1" src="https://storage.apex4u.com/d36eb80d-866d-43ec-83e1-a2c9bd2929a3.jpg" alt="">
+                </div>
+
+            </marquee>
+        </div>
+
+    </div>
+</body>
+
+</html>
